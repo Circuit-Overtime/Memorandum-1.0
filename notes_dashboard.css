@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100&family=Caveat+Brush&family=Cookie&family=Lobster+Two:ital@0;1&family=Pacifico&family=Passions+Conflict&family=Reenie+Beanie&family=Sacramento&family=Satisfy&display=swap');
+*
+{
+    -webkit-tap-highlight-color: transparent;
+}
+
 html{
     height: 100%;
   }
