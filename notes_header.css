@@ -1,0 +1,400 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Henny+Penny&family=Reenie+Beanie&family=Righteous&family=Sacramento&family=Satisfy&display=swap');
+@import "font-awesome";
+
+header {
+  position: relative;
+  background-color: #0000005e;
+  height: 150px;  
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+}
+
+.add-button {
+  position: absolute;
+  right: 40px;
+  bottom: -28px;
+  width: 56px;
+  height: 56px;
+  overflow: visible;
+  -webkit-transition: transform .4s cubic-bezier(.58,-0.37,.45,1.46),
+    color 0s ease .4s,font-size .2s;
+  -moz-transition: transform .4s cubic-bezier(.58,-0.37,.45,1.46),
+    color 0s ease .4s,font-size .2s;
+  transition: transform .4s cubic-bezier(.58,-0.37,.45,1.46),
+    color 0s ease .4s,font-size .2s;
+  text-align: center;
+  line-height: 56px;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  background: #0099ff;
+  border-radius: 50%;
+
+}
+
+.add-button:before {
+  position: relative;
+  z-index: 100;
+  content:"+";
+
+  
+}
+
+
+
+.add-button:hover {
+ 
+  color: rgb(255, 255, 255);
+  transform: rotate(45deg);
+}
+
+
+.onlyPinned {
+  position: absolute;
+  right: 100px;
+  bottom: -28px;
+  width: 56px;
+  height: 56px;
+  overflow: visible;
+  -webkit-transition: transform .4s cubic-bezier(.58,-0.37,.45,1.46),
+    color 0s ease .4s,font-size .2s;
+  -moz-transition: transform .4s cubic-bezier(.58,-0.37,.45,1.46),
+    color 0s ease .4s,font-size .2s;
+  transition: transform .4s cubic-bezier(.58,-0.37,.45,1.46),
+    color 0s ease .4s,font-size .2s;
+  text-align: center;
+  line-height: 56px;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  background: #ffffff;
+  border-radius: 50%;
+  display: none;
+
+}
+
+.onlyPinned:before {
+  position: relative;
+  z-index: 100;
+  content:"";
+  font-size: 24px;
+  font-family: "Font Awesome 5 Free";
+  color: #005515;
+  
+}
+
+
+
+.onlyPinned:hover {
+ 
+  color: rgb(255, 255, 255);
+  transform: rotate(45deg);
+}
+
+
+.onlyPinned.active {
+  position: absolute;
+  right: 100px;
+  bottom: -28px;
+  width: 56px;
+  height: 56px;
+  overflow: visible;
+  -webkit-transition: transform .4s cubic-bezier(.58,-0.37,.45,1.46),
+    color 0s ease .4s,font-size .2s;
+  -moz-transition: transform .4s cubic-bezier(.58,-0.37,.45,1.46),
+    color 0s ease .4s,font-size .2s;
+  transition: transform .4s cubic-bezier(.58,-0.37,.45,1.46),
+    color 0s ease .4s,font-size .2s;
+  text-align: center;
+  line-height: 56px;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  background: #06b800;
+  border-radius: 50%;
+
+
+}
+
+
+.user_name
+{
+position: absolute;
+pointer-events: none;
+top: 10px;
+font-family: 'Righteous', cursive;
+color: rgba(240, 255, 255, 0.589);
+left: 25px;
+text-transform: capitalize;
+
+}
+.greeting
+{
+position: absolute;
+pointer-events: none;
+font-family: 'Righteous', cursive;
+color: rgba(240, 255, 255, 0.589);
+left: 25px;
+top: 2px;
+color: rgb(255, 166, 0);
+font-size: 12px;
+font-family: 'Henny Penny', cursive;
+}
+
+.desc
+{
+position: absolute;
+pointer-events: none;
+font-family: 'Righteous', cursive;
+color: rgba(240, 255, 255, 0.589);
+left: 25px;
+top: 48px;
+color: rgb(255, 0, 64);
+font-size: 12px;
+font-family: 'Chelsea Market', cursive;
+}
+
+input[type=text]{
+  position: absolute;
+  top: 90px;
+  left: 0.5%;
+  padding: 15px 40px 15px 20px;
+  width: 92%;
+  color: #00f020;
+  /* text-transform: uppercase; */
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px solid #222;
+  background-color: transparent;
+  transition: width 0.4s ease;
+  outline: none;
+}
+  
+  /* input[type=text]:focus{ width: 95%; } */
+
+
+i{
+  position: relative;
+  left: 7px;
+  color: #ffffff;
+}
+
+.logo
+{
+    position: absolute;
+    top: 15px;
+    left: 93%;
+    height: 55px;
+    /* transform: scale(0.7); */
+    width: 60px;
+    z-index: 1000;
+    background-color: transparent;
+}
+.logo img
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+/*ex-19.5*/
+
+
+.offline_notif
+{
+	position: absolute;
+	top: 1%;
+	left: 85%;
+	animation: pulse 0.5s infinite;
+	transition: 0.5s;
+	display: block;
+  color: #ffb;
+  z-index: 1001;
+}
+
+@keyframes pulse {
+	0% {
+	 
+	  transform: scale(1);
+	}
+	70% {
+		
+		transform: scale(1.2);
+	}
+	100% {
+		
+		transform: scale(1);
+	}
+  }
+
+
+@media screen and (max-width: 767px)
+{
+
+
+
+
+.user_name
+{
+position: absolute;
+pointer-events: none;
+top: 15px;
+font-family: 'Righteous', cursive;
+font-size: 18px;
+color: rgba(240, 255, 255, 0.589);
+left: 25px;
+text-transform: capitalize;
+
+}
+
+.logo
+{
+    position: absolute;
+    top: 15px;
+    left: 78%;
+    height: 55px;
+    /* transform: scale(0.7); */
+    width: 60px;
+    z-index: 1000;
+    background-color: transparent;
+}
+.logo img
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+input[type=text]{
+  position: absolute;
+  top: 90px;
+  left: 0.5%;
+  padding: 15px 40px 15px 20px;
+  width: 50%;
+  color: #00f020;
+  /* text-transform: uppercase; */
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px solid #222;
+  background-color: transparent;
+  transition: width 0.4s ease;
+  outline: none;
+}
+
+
+.onlyPinned {
+  position: absolute;
+  right: 80px;
+  bottom: 14px;
+  width: 56px;
+  height: 56px;
+  overflow: visible;
+  -webkit-transition: transform .4s cubic-bezier(.58,-0.37,.45,1.46),
+    color 0s ease .4s,font-size .2s;
+  -moz-transition: transform .4s cubic-bezier(.58,-0.37,.45,1.46),
+    color 0s ease .4s,font-size .2s;
+  transition: transform .4s cubic-bezier(.58,-0.37,.45,1.46),
+    color 0s ease .4s,font-size .2s;
+  text-align: center;
+  line-height: 56px;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  background: #ffffff;
+  border-radius: 50%;
+  display: none;
+}
+
+.onlyPinned.active {
+  position: absolute;
+  right: 80px;
+  bottom: 14px;
+  width: 56px;
+  height: 56px;
+  overflow: visible;
+  -webkit-transition: transform .4s cubic-bezier(.58,-0.37,.45,1.46),
+    color 0s ease .4s,font-size .2s;
+  -moz-transition: transform .4s cubic-bezier(.58,-0.37,.45,1.46),
+    color 0s ease .4s,font-size .2s;
+  transition: transform .4s cubic-bezier(.58,-0.37,.45,1.46),
+    color 0s ease .4s,font-size .2s;
+  text-align: center;
+  line-height: 56px;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  background: #09ff00;
+  border-radius: 50%;
+  background: #35f500;
+box-shadow:  21px 21px 7px #28b800,
+             -21px -21px 7px #42ff00;
+
+}
+
+.onlyPinned:before {
+  position: relative;
+  z-index: 100;
+  content:"";
+  font-size: 24px;
+  font-family: "Font Awesome 5 Free";
+  color: #005515;
+  
+}
+
+
+.add-button {
+  position: absolute;
+  right: 10px;
+  bottom: 14px;
+  width: 56px;
+  height: 56px;
+  overflow: visible;
+  -webkit-transition: transform .4s cubic-bezier(.58,-0.37,.45,1.46),
+    color 0s ease .4s,font-size .2s;
+  -moz-transition: transform .4s cubic-bezier(.58,-0.37,.45,1.46),
+    color 0s ease .4s,font-size .2s;
+  transition: transform .4s cubic-bezier(.58,-0.37,.45,1.46),
+    color 0s ease .4s,font-size .2s;
+  text-align: center;
+  line-height: 56px;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  background: #0099ff;
+  border-radius: 50%;
+
+
+}
+
+.add-button:before {
+  position: relative;
+  z-index: 100;
+  content:"+";
+
+  
+}
+
+.offline_notif
+{
+	position: absolute;
+	top: 1%;
+	left: 255px;
+	animation: pulse 0.5s infinite;
+	transition: 0.5s;
+	display: block;
+  color: #ffc;
+  z-index: 1001;
+}
+
+
+}

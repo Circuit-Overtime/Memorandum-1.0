@@ -1,0 +1,52 @@
+:root
+{
+    --deleteProg : 100%;
+}
+.deleteProg
+{
+    position: absolute;
+    top: 97%;
+    height: 5px;
+    max-width: 150px;
+    width: var(--deleteProg);
+    left: 25px;
+    transition: 0.5s;
+    border-radius: 15px;
+    background-color: rgb(136, 136, 136);
+    transition: 0.5s;
+    transform: translateY(200px);
+}
+
+.deleteProg_unit
+{
+    position: relative;
+    top: 0;
+    height: 5px;
+    max-width: 150px;
+    width: var(--deleteProg);
+    left: 0;
+    transition: 0.5s;
+    border-radius: 15px;
+    background-color: rgb(255, 0, 0);
+    transition: 0.5s;
+}
+
+
+
+.deleteProg_number
+{
+    position: relative;
+    top: -42px;
+    font-size: 19px;
+    color: aliceblue;
+    transition: 0.5s;
+    width: auto;
+    left:  5px;
+}
+#cancel_deleteProcess
+{
+    position: relative;
+    top: -79px;
+    font-size: 15px;
+    left: 87%;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Memorandum 1.0.0</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"  />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link  rel="stylesheet" href="notes_dashboard.css" >
+    <link  rel="stylesheet" href="notes_header.css" >
+    <link  rel="stylesheet" href="notes_loader.css" >
+    <link  rel="stylesheet" href="notes_viewer.css" type="text/css" >
+    <link  rel="stylesheet" href="notes_delete.css" >
+    <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/notes-89337.appspot.com/o/notes_logo.png?alt=media&token=629f74d7-7f08-485b-a7d4-e8ee20156ea5">
+</head>
+<body>
+  <div class="note_viewer" id="note_viewer">
+    <ion-icon name="close-circle" data-id ="" id="note_viewer_close" onclick="note_viewer_close(this)"></ion-icon>
+    <input type="text" id="note_viewer_title" maxlength="22" value="" placeholder="Dear, Heading Goes Here ..." autocomplete="off" spellcheck="false"/>
+    <textarea maxlength="2000" id="note_viewer_content" placeholder="Hey.... I am here to take your notes, write here please" spellcheck="false" autocomplete="off"></textarea>
+      <h2 id="guide">to save the changes just close the notes-viewer box. </h2>
+  </div>
+  
+  <div class="logo" id="logo">
+    <img src="https://firebasestorage.googleapis.com/v0/b/notes-89337.appspot.com/o/notes_logo.png?alt=media&token=629f74d7-7f08-485b-a7d4-e8ee20156ea5">
+  </div>
+  <img src="https://firebasestorage.googleapis.com/v0/b/notes-89337.appspot.com/o/no_notes.png?alt=media&token=cbf06f6e-d4ea-4f2b-87e1-4292a0c1a996" class="no_notes" id="no_notes">
+  <img src="https://firebasestorage.googleapis.com/v0/b/notes-89337.appspot.com/o/no_Pinnednotes.png?alt=media&token=586e54fa-53a4-41dc-b799-d77e3096dc13" class="no_Pinnednotes" id="no_Pinnednotes">
+  <div class="honeycomb" id="honeycomb">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+    <canvas id="canvas"></canvas>
+    <div class="container">
+      <header>
+        <p class="offline_notif" id="offline_notif"><ion-icon name="wifi"></ion-icon>!</p>
+        <h2 class="greeting" id="greeting"></h2>
+        <h2 class="user_name"></h2>
+        <h2 class="desc">Your Daily Dose of Support</h2>
+        <input placeholder='Search Notes...' class='js-search' type="text" id="notesSearch" >
+
+        <div class="add-button" id="createNote" onclick="NoteAdd()">
+        </div>
+
+        <div class="onlyPinned" id="onlyPinned">
+        </div>
+      </header>
+    
+    </div>
+    
+    <div class="notes_container" id="notes_container">
+      
+    <ul id="notes_list">
+      
+    </ul>
+  </div>
+  <div class="deleteProg" id="deleteProg">
+    <div class="deleteProg_unit" id="deleteProg_unit"></div>
+    <h2 class="deleteProg_number" id="deleteProg_number">5</h2>
+    <i class="fa-solid fa-rotate-left" id="cancel_deleteProcess"></i>
+  </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="notes_dash.js"></script>
+    <script src="notes_display.js"></script>
+    <script src="notes_delete.js"></script>
+    <script src="InternetSnagNotes.js"></script>
+</body>
+</html>

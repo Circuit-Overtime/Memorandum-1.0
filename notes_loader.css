@@ -1,0 +1,175 @@
+
+:root
+{
+    --primary : "#fff";
+}
+@-webkit-keyframes honeycomb {
+    0%,
+    20%,
+    80%,
+    100% {
+      opacity: 0;
+      -webkit-transform: scale(0);
+              transform: scale(0); }
+    30%,
+    70% {
+      opacity: 1;
+      -webkit-transform: scale(1);
+              transform: scale(1); } }
+  @keyframes honeycomb {
+    0%,
+    20%,
+    80%,
+    100% {
+      opacity: 0;
+      -webkit-transform: scale(0);
+              transform: scale(0); }
+    30%,
+    70% {
+      opacity: 1;
+      -webkit-transform: scale(1);
+              transform: scale(1); } }
+  
+  .honeycomb {
+    height: 24px;
+    top: 50%;
+    z-index: 1002;
+    position: absolute;
+    left: 50%;
+    width: 24px; 
+    transform-origin: center;
+    width: auto;
+    height: auto;
+    transition: 0.5s;
+    max-height: 24px;
+    max-width: 24px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%) scale(2);
+    transform: translate(-50%, -50%) scale(2);
+}
+
+    .honeycomb div {
+      -webkit-animation: honeycomb 2.1s infinite backwards;
+              animation: honeycomb 2.1s infinite backwards;
+      background: #16181b;
+      height: 12px;
+      margin-top: 6px;
+      position: absolute;
+      width: 24px; 
+    }
+      .honeycomb div:after, .honeycomb div:before {
+        content: '';
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        position: absolute;
+        left: 0;
+        right: 0; 
+    }
+      .honeycomb div:after {
+        top: -6px;
+        border-bottom: 6px solid #16181b }
+      .honeycomb div:before {
+        bottom: -6px;
+        border-top: 6px solid #16181b; }
+      .honeycomb div:nth-child(1) {
+        -webkit-animation-delay: 0s;
+                animation-delay: 0s;
+        left: -28px;
+        top: 0; }
+      .honeycomb div:nth-child(2) {
+        -webkit-animation-delay: 0.1s;
+                animation-delay: 0.1s;
+        left: -14px;
+        top: 22px; }
+      .honeycomb div:nth-child(3) {
+        -webkit-animation-delay: 0.2s;
+                animation-delay: 0.2s;
+        left: 14px;
+        top: 22px; }
+      .honeycomb div:nth-child(4) {
+        -webkit-animation-delay: 0.3s;
+                animation-delay: 0.3s;
+        left: 28px;
+        top: 0; }
+      .honeycomb div:nth-child(5) {
+        -webkit-animation-delay: 0.4s;
+                animation-delay: 0.4s;
+        left: 14px;
+        top: -22px; }
+      .honeycomb div:nth-child(6) {
+        -webkit-animation-delay: 0.5s;
+                animation-delay: 0.5s;
+        left: -14px;
+        top: -22px; }
+      .honeycomb div:nth-child(7) {
+        -webkit-animation-delay: 0.6s;
+                animation-delay: 0.6s;
+        left: 0;
+        top: 0; }
+
+       
+
+.no_notes
+{
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  height: 90px;
+  width: 80px;
+  z-index: 1001;
+  opacity: 75%;
+  top: 50%;
+  animation:  noNotes_animate 2s linear infinite;
+  left: 50%;
+  transition: 0.5s;
+  -ms-transform: translate(-50%, -50%) scale(2);
+  transform: translate(-50%, -50%) scale(2);
+  display: none;
+}
+@keyframes noNotes_animate {
+  0%
+  {
+    transform: translate(-50%, -50%) scale(2) translateY(0px);
+  }
+  50%
+  {
+    transform: translate(-50%, -50%) scale(2) translateY(-10px);
+  }
+  100%
+  {
+    transform: translate(-50%, -50%) scale(2) translateY(0px);
+  }
+}
+
+.no_Pinnednotes
+{
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  height: 90px;
+  width: 80px;
+  z-index: 1001;
+  opacity: 75%;
+  top: 50%;
+  animation:  noPinnedNotes_animate 2s linear infinite;
+  left: 50%;
+  transition: 0.5s;
+  -ms-transform: translate(-50%, -50%) scale(2);
+  transform: translate(-50%, -50%) scale(2);
+  display: none;
+}
+@keyframes noPinnedNotes_animate {
+  0%
+  {
+    transform: translate(-50%, -50%) scale(2) translateY(0px);
+  }
+  50%
+  {
+    transform: translate(-50%, -50%) scale(2) translateY(-10px);
+  }
+  100%
+  {
+    transform: translate(-50%, -50%) scale(2) translateY(0px);
+  }
+}
