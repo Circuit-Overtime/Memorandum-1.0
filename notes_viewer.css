@@ -117,7 +117,7 @@ cursor: pointer;
   {
     position: absolute;
     top: 10px;
-    left: 65px;
+    left: 25px;
     width: 150px;
     color: #ffc;
     font-size: 24px;
@@ -146,8 +146,8 @@ cursor: pointer;
   {
     position: absolute;
     top: 70px;
-    left: 85px;
-    width: 240px;
+    left: 45px;
+    width: 210px;
     height: 300px;
     color: #ffc;
     background: transparent;
