@@ -291,7 +291,6 @@ firebase.database().ref(localStorage.getItem("account_login_username_NOTES")+"/"
   document.getElementById("notes_list").style.pointerEvents = "none";
 
   
-  document.getElementById("note_viewer_content").focus();
 
 
 
