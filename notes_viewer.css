@@ -88,16 +88,16 @@ cursor: pointer;
   .note_viewer
 {
     position: absolute;
-    height: 450px;
+    height: 650px;
     width: 0%;
     background-color: rgba(0, 0, 0, 0.658);
     backdrop-filter: blur(15px);
     overflow: hidden;
-    max-height: 450px;
-    max-width: 300px;
-    top: 50%;
+    max-height: 850px;
+    max-width: 360px;
+     top: 50%; 
     border-radius: 0px;
-    left: 45%;
+    /* left: 45%; */
     transition: 0.5s;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -107,8 +107,8 @@ cursor: pointer;
 .note_viewer ion-icon
 {
 position: absolute;
-top: 25px;
-left: 260px;
+top: 20px;
+left: 330px;
 font-size: 24px;
 color: #ffc;
 cursor: pointer;
@@ -116,9 +116,9 @@ cursor: pointer;
   #note_viewer_title
   {
     position: absolute;
-    top: 10px;
-    left: 25px;
-    width: 150px;
+    top: 50px;
+    left: 15px;
+    width: 260px;
     color: #ffc;
     font-size: 24px;
     font-weight: 700;
@@ -133,22 +133,13 @@ cursor: pointer;
     color: rgba(255, 255, 204, 0.452);
     vertical-align: middle;
   }
-#guide
-{
-  position: absolute;
-  top: 85%;
-  left: 85px;
-  color: rgba(240, 248, 255, 0.473);
-  font-size: 13px;
-  
-}
   #note_viewer_content
   {
     position: absolute;
-    top: 70px;
-    left: 45px;
-    width: 210px;
-    height: 300px;
+    top: 120px;
+    left: 25px;
+    width: 300px;
+    height: 470px;
     color: #ffc;
     background: transparent;
     font-family: 'Reenie Beanie';
@@ -158,6 +149,16 @@ cursor: pointer;
     border: none;
   outline: none;
   }
+#guide
+{
+  position: absolute;
+  top: 91%;
+  left: 25px;
+  color: rgba(240, 248, 255, 0.473);
+  font-size: 13px;
+  
+}
+
   #note_viewer_content::-webkit-scrollbar
   {
     background-color: transparent;
