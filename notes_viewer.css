@@ -29,7 +29,7 @@ cursor: pointer;
 }
   #note_viewer_title
   {
-    position: absolute;
+    position: fixed;
     top: 10px;
     left: 25px;
     width: 500px;
@@ -57,7 +57,7 @@ cursor: pointer;
 }
   #note_viewer_content
   {
-    position: absolute;
+    position: fixed;
     top: 70px;
     left: 45px;
     width: 640px;
@@ -85,10 +85,14 @@ cursor: pointer;
 
   @media screen and (max-width: 767px)
 {
+  body
+  {
+    overflow: hidden;
+  }
   .note_viewer
 {
     position: absolute;
-    height: 650px;
+    height: 600px;
     width: 0%;
     background-color: rgba(0, 0, 0, 0.658);
     backdrop-filter: blur(15px);
@@ -107,11 +111,12 @@ cursor: pointer;
 .note_viewer ion-icon
 {
 position: absolute;
-top: 20px;
-left: 330px;
+top: 70px;
+left: 310px;
 font-size: 24px;
 color: #ffc;
 cursor: pointer;
+z-index: 1004;
 }
   #note_viewer_title
   {
@@ -139,7 +144,7 @@ cursor: pointer;
     top: 120px;
     left: 25px;
     width: 300px;
-    height: 470px;
+    height: 380px;
     color: #ffc;
     background: transparent;
     font-family: 'Reenie Beanie';
@@ -152,7 +157,7 @@ cursor: pointer;
 #guide
 {
   position: absolute;
-  top: 91%;
+  top: 86%;
   left: 25px;
   color: rgba(240, 248, 255, 0.473);
   font-size: 13px;
